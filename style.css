@@ -1,0 +1,39 @@
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin-bottom: 100px;
+}
+.upper1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 250px 250px;
+    background-color: cadetblue;
+    text-align: center;
+}
+.upper11{
+    grid-area: 2/1/2/4;
+    background-color: transparent;
+    }
+h1{
+    font-size: 5rem;
+    color: brown;
+    font-weight: bolder;
+    font-style: italic;
+    
+}
+h2{
+    font-size: 5rem;
+    }
+.lower{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    grid-template-columns: 1fr/1fr;
+    grid-template-rows: 1fr
+}
+.count{
+    background-color: yellowgreen;
+    height: 50px;
+}
