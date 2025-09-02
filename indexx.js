@@ -26,14 +26,12 @@ document.querySelector(".button1").addEventListener("click" , function() {
 })
 
 document.querySelector(".button3").addEventListener("click", function(){
-    if(timeleft === 0 || timeleft === 1) {
-        
-        for(var i=1; i <= 10; i++){
+    
+        for(var i=timeleft; i > 0; i--){
            
             setTimeout(function () {
-            timeleft++;
+            timeleft--;
             document.querySelector("h2").innerHTML = timeleft;
             },i* 200);
-        }
-    }
+        }    
 })
